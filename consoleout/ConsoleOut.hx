@@ -1,3 +1,5 @@
+package consoleout;
+
 import neko.Lib;
 
 enum Color
