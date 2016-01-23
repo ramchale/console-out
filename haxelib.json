@@ -1,0 +1,10 @@
+{
+    "name":         "console-out",
+    "url":          "https://github.com/ramchale/console-out",
+    "license":      "Public",
+    "tags":         ["cli"],
+    "description":  "Basic formatting support for console output https://github.com/ramchale/console-out",
+    "version":      "0.0.1",
+    "releasenote":  "First release",
+    "contributors": ["ramchale"]
+}
