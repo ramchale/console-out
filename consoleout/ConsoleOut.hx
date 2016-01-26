@@ -36,24 +36,24 @@ class ConsoleOut
 	private static inline var COMMAND_FOREGROUND_COLOR = "3";
 	private static inline var COMMAND_BACKGROUND_COLOR = "4";
 
-	private static var colorize:Bool;
+	public static var outputCommands:Bool;
 
 	public static function __init__()
 	{
 		// Neko Log.Out seems to have issues with utf8 on Windows
 		if (Sys.systemName() == "Windows")
 		{
-			colorize = false;
+			outputCommands = false;
 		}
 		else
 		{
-			colorize = true;
+			outputCommands = true;
 		}
 	}
 
 	public static function textFormatCodes(?foreground:Color, ?background:Color, ?attribute:DisplayAttribute):String
 	{
-		if (colorize)
+		if (outputCommands)
 		{
 			var commands = new Array<String>();
 			if (attribute == null && foreground == null && background == null)

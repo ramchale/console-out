@@ -1,0 +1,7 @@
+-main TestMain
+
+-lib openfl
+-lib hamcrest
+-lib console-out
+
+-neko tests.n

@@ -1,0 +1,28 @@
+language: haxe
+
+haxe:
+  - "3.2.1"
+  - development
+
+matrix:
+  allow_failures:
+    - haxe: development
+
+neko: "2.0.0"
+
+sudo: false
+
+install:
+  - haxelib dev console-out $TRAVIS_BUILD_DIR
+  - haxelib install openfl
+  - haxelib install hamcrest
+  - haxelib list
+
+script:
+  - cd tests
+  - haxe test.hxml
+  - neko tests.n
+
+cache:
+  directories:
+    - $HOME/haxe/lib
