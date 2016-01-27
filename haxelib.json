@@ -3,8 +3,8 @@
     "url":          "https://github.com/ramchale/console-out",
     "license":      "Public",
     "tags":         ["cli"],
-    "description":  "Basic colorization and formatting support for console / cli output",
-    "version":      "0.0.1",
+    "description":  "Basic text colorization and formatting support for console / cli output",
+    "version":      "1.0.0",
     "releasenote":  "Adding tests",
     "contributors": ["ramchale"]
 }
