@@ -33,7 +33,7 @@ class ConsoleOut
 	private static inline var CONSOLE_COMMAND_START:String = "\x1B[";
 
 	private static inline var COMMAND_RESET = "0";
-	private static inline var COMMAND_FOREGROUND_COLOR = "3";
+	private static inline var COMMAND_FOR
 	private static inline var COMMAND_BACKGROUND_COLOR = "4";
 
 	public static var outputCommands:Bool;
